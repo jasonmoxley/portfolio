@@ -1,0 +1,153 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+main {
+	position: relative;
+    margin: 0;
+	min-width: 100%;
+	min-height: 100%;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* .container {
+	padding: 1rem;
+} */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-weight: 300;
+	text-align: center;
+}
+
+header {
+	font-size: .8rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #121f26;
+    color: white;
+}
+
+header h1 {
+	font-size: 3.5rem;
+	margin: 0;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+header h2 {
+	font-weight: 300;
+}
+
+.navbar {
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #e2e8ed;
+}
+
+.navbar a {
+    float: none;
+    text-align: center;
+    color: black;
+    width: 200px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    border-bottom: 3px solid black;
+}
+
+.item {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item .title {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+.item .underPortfolio {
+    width: 120px;
+    border-bottom: 3px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item .underResume {
+    width: 110px;
+    border-bottom: 3px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item .underContact {
+    width: 160px;
+    border-bottom: 3px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project {
+	margin: 1.5rem auto;
+}
+
+.project h2 {
+	display: inline-block;
+	font-size: 1.5rem;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.project svg {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-left: .5rem;
+}
+
+.project p {
+	margin: .5rem 0;
+}
+
+.project .subtitle {
+	font-size: 1.1rem;
+	font-style: italic;
+}
+
+
