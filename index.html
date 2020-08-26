@@ -13,10 +13,11 @@
                 <h1>Jason Moxley</h1>
                 <h2>Software Engineer, Web Developer, Student</h2>
             </header>
+            <div id="portfolio"></div>
             <div class="navbar">
-                <a href="#">Portfolio</a>
-                <a href="#">Resume</a>
-                <a href="#">Contact Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact Me</a>
             </div>
             <div class="item">
                 <div class="title">Portfolio</div>
@@ -27,29 +28,83 @@
                         <div class="subtitle">A simple web app for students to keep track of upcoming assignments and deadlines</div>
                         <p>This application was built out of a personal desire for a simple online planner without the clutter of complex features of current popular online task managers.</p>
                         <p>This project uses React and Redux to handle state change. Firebase to handle data storage and authentication. CSS and Semantic-UI(CSS framework) for styling.</p>
+                        <div class="buttons">
+                            <a href="https://github.com/jasonmoxley/HomeworkTracker">
+                                <img src="./icons/433-github.svg" alt="github" />
+                                <h4>Github</h4>
+                            </a>
+                            <a class="second" href="https://youtu.be/2tsTBP77pLQ">
+                                <img src="./icons/019-play.svg" alt="youtube" />
+                                <h4>Demo</h4>
+                            </a>
+                            <a href="https://hwtracker.netlify.app/">
+                                <img src="./icons/003-home3.svg" alt="app" />
+                                <h4>App</h4>
+                            </a>
+                        </div>
                     </div>
                     <div class="project">
                         <h2>March 2 Oz</h2>
                         <div class="subtitle">A game to help teach biology students at UNC CH</div>
                         <p>A team of 4 students developed this game under the guidance of UNC Biology Professor Dr. Alan Jones and his brother Dr. Roger Jones. This game is designed to help teach students about cell membrane permeability and voltage.</p>
                         <p>This game was built using unity and C#</p>
+                        <div class="buttons">
+                            <a href="https://github.com/jasonmoxley/Comp585">
+                                <img src="./icons/433-github.svg" alt="github" />
+                                <h4>Github</h4>
+                            </a>
+                            <a class="second" href="https://march2oz.web.unc.edu/">
+                                <img src="./icons/023-pacman.svg" alt="game" />
+                                <h4>Game</h4>
+                            </a>
+                        </div>
                     </div>
                     <div class="project">
                         <h2>Class Registration</h2>
                         <div class="subtitle">A web app designed to conveniently view available classes and dynamically view major/minor requirements.</div>
                         <p>This app was built out of frustration with the current UNC class registration portal which offers no help to students in viewing which classes they need to fullfill various requriements.</p>
-                        <p>This project was built using HTML, CSS, Bulma (CSS framework), Javascript, and jQuery</p>
+                        <p id="resume">This project was built using HTML, CSS, Bulma (CSS framework), Javascript, and jQuery</p>
+                        <div class="buttons">
+                            <a href="https://github.com/AidanWZ/Comp426FinalProject">
+                                <img src="./icons/433-github.svg" alt="github" />
+                                <h4>Github</h4>
+                            </a>
+                            <a class="second" href="https://youtu.be/gdY-pEVuNgY">
+                                <img src="./icons/019-play.svg" alt="youtube" />
+                                <h4>Demo</h4>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="title">Resume</div>
                 <div class="underResume"></div>
+                <div class="resume">
+                    <embed class="resume" type="application/pdf" src="Jason Moxley Resume.pdf" height="780px" width="600px" />
+                </div>
             </div>
-            <div class="item">
+            <div class="item" id="contact">
                 <div class="title">Contact Me</div>
                 <div class="underContact"></div>
+                <div class="contact">
+                    <div class="links">
+                        <a>
+                            <img src="icons/070-envelop.svg" alt="email" />
+                            <h4>jasonfmoxley@gmail.com</h4>
+                        </a>
+                        <a href="https://github.com/jasonmoxley" class="middle">
+                            <img src="./icons/433-github.svg" alt="github" />
+                            <h4>Github</h4>
+                        </a>
+                        <a href="#">
+                            <img src="./icons/458-linkedin.svg" alt="linkedin" />
+                            <h4>LinkedIn</h4>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <div class="end"></div>
         </div>
     </div>
 </body>
