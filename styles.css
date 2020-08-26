@@ -12,7 +12,8 @@ html {
 
 body {
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Varela', serif;
 }
 
 main {
@@ -82,7 +83,6 @@ header h2 {
 }
 
 .item {
-    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -115,6 +115,14 @@ header h2 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+#one {
+    max-width: 600px;
+}
+
+#two {
+    max-width: 600px;
 }
 
 .projects {
@@ -171,7 +179,6 @@ header h2 {
 
 .contact {
     margin: 1.5rem auto;
-
 }
 
 .links a {
