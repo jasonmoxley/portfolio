@@ -13,7 +13,7 @@ html {
 body {
 	overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    font-family: 'Varela', serif;
+    font-family: 'Ubuntu', serif;
 }
 
 main {
@@ -34,12 +34,16 @@ body {
 	text-align: center;
 }
 
+#portfolio {
+    color: #e2e8ed;
+}
+
 header {
 	font-size: .8rem;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #121f26;
-    color: white;
+    background-color: #e2e8ed;
+    color: #012727;
 }
 
 header h1 {
@@ -63,13 +67,13 @@ header h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: #e2e8ed;
+    background-color: #012727;
 }
 
 .navbar a {
     float: none;
     text-align: center;
-    color: black;
+    color: #e2e8ed;
     width: 200px;
     display: inline-block;
     padding: 20px 15px;
@@ -79,12 +83,14 @@ header h2 {
 }
 
 .navbar a:hover {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #e2e8ed;
 }
 
 .item {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
+    color: #012727;
 }
 
 .item .title {
@@ -118,11 +124,11 @@ header h2 {
 }
 
 #one {
-    max-width: 600px;
+    max-width: 1100px;
 }
 
 #two {
-    max-width: 600px;
+    max-width: 1100px;
 }
 
 .projects {
@@ -132,15 +138,15 @@ header h2 {
 }
 
 .project {
-	margin: 1.5rem auto;
+	margin: 2.5rem auto;
 }
 
 .project h2 {
 	display: inline-block;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	margin: 0;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 1200;
 }
 
 .project .buttons a {
@@ -162,6 +168,10 @@ header h2 {
     font-size: 1.3rem;
     margin: 0.5rem 0;
     font-weight: bold;
+}
+
+.project img {
+    background-color: #e2e8ed;
 }
 
 .project p {
