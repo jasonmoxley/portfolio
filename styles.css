@@ -1,3 +1,4 @@
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -13,7 +14,7 @@ html {
 body {
 	overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    font-family: 'Ubuntu', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -30,8 +31,12 @@ main {
 }
 
 body {
-	font-weight: 300;
 	text-align: center;
+}
+
+.container {
+    margin: 0;
+
 }
 
 #portfolio {
@@ -39,21 +44,21 @@ body {
 }
 
 header {
-	font-size: .8rem;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #e2e8ed;
-    color: #012727;
+    background-color: #116466;
+    color: white;
 }
 
 header h1 {
-	font-size: 3.5rem;
+    font-size: 4rem;
+    font-weight: 700;
 	margin: 0;
-	font-weight: 800;
 	text-transform: uppercase;
 }
 header h2 {
-	font-weight: 300;
+    font-size: 1.5rem;
+	font-weight: 500;
 }
 
 .navbar {
@@ -63,13 +68,14 @@ header h2 {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    font-size: 20px;
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 40px;
     padding-left: 5%;
     padding-right: 5%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #012727;
+    background-color: #444444;
 }
 
 .navbar .left {
@@ -83,7 +89,7 @@ header h2 {
 .navbar .left a {
     float: none;
     text-align: center;
-    color: #e2e8ed;
+    color: white;
     height: 55px;
     display: inline-block;
     padding-top: 20px;
@@ -91,7 +97,6 @@ header h2 {
     width: auto;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .navbar .left a:hover {
@@ -106,9 +111,8 @@ header h2 {
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #e2e8ed;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -134,11 +138,11 @@ header h2 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    color: #012727;
+    color: black;
 }
 
 .item .title {
-    font-weight: bolder;
+    font-weight: 500;
     font-size: 2rem;
     text-align: center;
 }
@@ -157,6 +161,7 @@ header h2 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .item .underResume {
@@ -184,40 +189,97 @@ header h2 {
     max-width: 1100px;
 }
 
+.item .about .row .column {
+    float: left;
+    padding: 10px;
+}
+
+.item .about .row .left {
+    width: 35%;
+    margin-right: 10%
+}
+
+.item .about .row .left img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #999999;
+    margin-bottom: 20px;
+}
+
+.item .about .row .left .personal {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.item .about .row .right {
+    width: 55%;
+}
+
+.item .about .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.item .about .row h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.item .about .row .right .content {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.item .about .row .right .skills  {
+    margin-top: 20px;
+}
+
+.item .about .row .right .education {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .projects {
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.project {
-	margin: 2.5rem auto;
+.projects .oz {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .project h2 {
 	display: inline-block;
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	font-weight: bolder;
+	font-weight: 500;
 }
 
 .project .buttons a {
     text-decoration: none;
     color: black;
-    border: 1px solid #012727;
-    padding: 0.5rem 0.5rem;
-    background-color: #e2e8ed;
+    border: 1px solid black;
+    padding: 0.4rem 0.4rem;
+    background-color: #c5c6c7;
 }
 
 .project .buttons a:hover {
-    border: 1px solid #012727;
-    color: #e2e8ed;
-    background-color: #012727;
+    border: 1px solid #116466;
+    color: white;
+    background-color: #116466;
 }
 
 .project .buttons a:hover img {
-    filter: invert(98%) sepia(3%) saturate(1000%) hue-rotate(178deg) brightness(96%) contrast(93%);
+    filter: invert(1);
 }
 
 .project .buttons .second {
@@ -227,17 +289,19 @@ header h2 {
 
 .project h4 {
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0.5rem 0;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .project p {
-	margin: .5rem 0;
+    margin: .5rem 0;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .project .subtitle {
-	font-size: 1.1rem;
+	font-size: 1.25rem;
 	font-style: italic;
 }
 
@@ -284,7 +348,7 @@ section .contact .contactinfo {
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: #0f3959;
+    background: #116466;
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -295,13 +359,14 @@ section .contact .contactinfo {
 
 section .contact .contactinfo h2 {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 section .contact .contactinfo .info {
     position: relative;
     margin: 20px 0;
+    padding: 0;
 }
 
 section .contact .contactinfo .info li {
@@ -327,7 +392,8 @@ section .contact .contactinfo .info li span:nth-child(1) img {
 section .contact .contactinfo .info li span:nth-child(2) {
     color: #fff;
     margin-left: 10px;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1rem;
     opacity: 0.5;
 }
 
@@ -370,7 +436,7 @@ section .contact .contactinfo .links li:hover a img {
 section .contact .contactForm {
     position: absolute;
     padding: 70px 50px;
-    background: #e2e8ed;
+    background: #c5c6c7;
     margin-left: 150px;
     padding-left: 250px;
     width: calc(100% - 150px);
@@ -380,7 +446,7 @@ section .contact .contactForm {
 
 section .contact .contactForm h2 {
     color: #0f3959;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -409,24 +475,25 @@ section .contact .contactForm .formBox .inputBox input {
     width: 100%;
     padding: 5px 0;
     resize: none;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 300;
-    color: #333;
+    color: #c5c6c7;
     border: none;
-    border-bottom: 1px solid #777;
     outline: none;
 }
 
 section .contact .contactForm .formBox .inputBox input,
 section .contact .contactForm .formBox .inputBox textarea {
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     resize: none;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 300;
-    color: #333;
+    color: black;
     border: none;
-    border-bottom: 1px solid #777;
+    border-bottom: 2px solid black;
     outline: none;
+    background: #c5c6c7;
 }
 
 section .contact .contactForm .formBox .inputBox textarea {
@@ -437,9 +504,9 @@ section .contact .contactForm .formBox .inputBox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 300;
-    color: #333;
+    color: black;
     transition: 0.5s;
     pointer-events: none;
 }
@@ -450,23 +517,34 @@ section .contact .contactForm .formBox .inputBox textarea:focus ~ span,
 section .contact .contactForm .formBox .inputBox input:valid ~ span,
 section .contact .contactForm .formBox .inputBox textarea:valid ~ span {
     transform: translateY(-20px);
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 0.75rem;
+    font-weight: 300;
     letter-spacing: 1px;
-    color: #ff568c;
+    color: #f27d42;
 }
 
 section .contact .contactForm .formBox .inputBox input[type="submit"] {
     position: relative;
     cursor: pointer;
-    background: #0f3959;
-    color: #fff;
+    background: #116466;
+    color: white;
     border: none;
     max-width: 150px;
     padding: 12px;
 }
 
 section .contact .contactForm .formBox .inputBox input[type="submit"]:hover {
-    background: #ff568c;
+    background: #f27d42;
+}
+
+.footer {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #444444;
+    color: white;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 

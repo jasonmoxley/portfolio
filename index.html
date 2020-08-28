@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jason Moxley Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" type="text/css" />
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -14,12 +14,11 @@
                 <h1>Jason Moxley</h1>
                 <h2>Software Engineer, Web Developer, Student</h2>
             </header>
-            <div id="portfolio"></div>
             <div class="navbar">
                 <div class="left">
-                    <a href="#">About Me</a>
-                    <a class="middle" href="#">Portfolio</a>
-                    <a href="#">Contact Me</a>
+                    <a href="#about">About Me</a>
+                    <a class="middle" href="#projects">Portfolio</a>
+                    <a href="#contact">Contact Me</a>
                 </div>
                 <div class="right">
                     <a href="resume.html" style="width: 150px">
@@ -33,13 +32,47 @@
                         <img src="./icons/458-linkedin.svg" alt="linkedin" />
                     </a>
                 </div>
-                
             </div>
             <div class="item" id="about">
                 <div class="title">About Me</div>
                 <div class="underAbout"></div>
                 <div class="about">
-
+                    <div class=row>
+                        <div class="column left">
+                            <img src="icons/mr squirrel.JPG" alt="squirrel" />
+                            <div class="personal">
+                                Computer science student graduating in December looking for a full time software engineering position
+                            </div>
+                        </div>
+                        <div class="column right">
+                            <div class="skills">
+                                <h2>Languages and Skills</h2>
+                                <div class="content">
+                                    HTML • CSS • JavaScript • TypeScript • jQuery • React • Redux • Java • Python • C# • Git
+                                </div>
+                            </div>
+                            <div class="education">
+                                <h2>Education</h2>
+                                <div class="content">
+                                    <div class="school">
+                                        University of North Carolina at Chapel Hill
+                                    </div>
+                                    <div class="degree">
+                                        B.S. in Computer Science
+                                    </div>
+                                    <div class="graduation">
+                                        Graduating in Decemeber 2020
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses">
+                                <h2>Courses</h2>
+                                <div class="content">
+                                    Introduction to Programming • Foundation of Programming • Data Structures • Computer Organization • Discrete Structures • Models of Languages and Computation • Algorithms and Analysis • Multivariable Calculus • Linear Algebra • Introduction to Probability • Modern Web Programming • Introduction to Computer Security • Serious Games • Files and Databases (Fall 2020) • Introduction to Machine Learning (Fall 2020)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item" id="projects">
@@ -66,7 +99,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="project">
+                    <div class="project oz">
                         <h2>March 2 Oz</h2>
                         <div class="subtitle">A game to help teach biology students at UNC CH</div>
                         <p>A team of 4 students developed this game under the guidance of UNC Biology Professor Dr. Alan Jones and his brother Dr. Roger Jones. This game is designed to help teach students about cell membrane permeability and voltage.</p>
@@ -108,7 +141,7 @@
                         <div class="contactinfo">
                             <div>
                                 <h2>Contact Info</h2>
-                                <ul class="info">
+                                <ul class="info" style="margin: 0;">
                                     <li>
                                         <span><img src="icons/072-location.svg" alt="location" /></span>
                                         <span>827 Wellington Rd<br>
@@ -160,7 +193,12 @@
                         </div>
                     </div>
                 </section>
-            <div class="end"></div>
+            </div>
+            <div class="footer">
+                <div class="icomoon">
+                    Icons from Icomoon, Fonts from Google Fonts
+                </div>
+            </div>
         </div>
     </div>
 </body>
