@@ -284,7 +284,10 @@ header h2 {
 
 .project .buttons .second {
     margin-left: 20px;
-    margin-right: 20px;
+}
+
+.project .buttons .third {
+    margin-left: 20px;
 }
 
 .project h4 {
