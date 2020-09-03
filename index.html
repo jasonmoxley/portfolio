@@ -39,7 +39,7 @@
                 <div class="about">
                     <div class=row>
                         <div class="column left">
-                            <img src="icons/mr squirrel.JPG" alt="squirrel" />
+                            <img src="icons/profile.jpeg" alt="squirrel" />
                             <div class="personal">
                                 Computer science student graduating in December looking for a full time software engineering position
                             </div>
@@ -66,9 +66,14 @@
                                 </div>
                             </div>
                             <div class="courses">
-                                <h2>Courses</h2>
+                                <h2>Interests</h2>
                                 <div class="content">
-                                    Introduction to Programming • Foundation of Programming • Data Structures • Computer Organization • Discrete Structures • Models of Languages and Computation • Algorithms and Analysis • Multivariable Calculus • Linear Algebra • Introduction to Probability • Modern Web Programming • Introduction to Computer Security • Serious Games • Files and Databases (Fall 2020) • Introduction to Machine Learning (Fall 2020)
+                                    <div class="sports">
+                                        UNC Cluh Tennis, Golf, Surfing
+                                    </div>
+                                    <div class="tech">
+                                        Computer Hardware (built my own computer), Video Games
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -136,67 +141,77 @@
             <div class="item" id="contact">
                 <div class="title">Contact Me</div>
                 <div class="underContact"></div>
-                <section>
-                    <div class="contact">
-                        <div class="contactinfo">
-                            <div>
+                <div class="contact">
+                    <div class="row">
+                        <div class="column left">
+                            <div class="contactinfo">
                                 <h2>Contact Info</h2>
                                 <ul class="info" style="margin: 0;">
                                     <li>
-                                        <span><img src="icons/072-location.svg" alt="location" /></span>
-                                        <span>827 Wellington Rd<br>
+                                        <span class="logo"><img src="icons/072-location.svg" alt="location" /></span>
+                                        <span class="details">827 Wellington Rd<br>
                                             Winston Salem, NC<br>
                                             27106</span>
                                     </li>
                                     <li>
-                                        <span><img src="icons/070-envelop.svg" alt="mail" /></span>
-                                        <span>jasonfmoxley@gmail.com</span>
+                                        <span class="logo"><img src="icons/070-envelop.svg" alt="mail" /></span>
+                                        <span class="details">jasonfmoxley@gmail.com</span>
                                     </li>
                                     <li>
-                                        <span><img src="icons/090-mobile2.svg" alt="phone" /></span>
-                                        <span>336-403-5821</span>
+                                        <span class="logo"><img src="icons/090-mobile2.svg" alt="phone" /></span>
+                                        <span class="details">336-403-5821</span>
                                     </li>
                                 </ul>
+                                <ul class="links">
+                                    <li><a href="#"><img src="icons/433-github.svg" alt="github" /></a></li>
+                                    <li><a href="#"><img src="icons/458-linkedin.svg" alt="linkedin" /></a></li>
+                                </ul>
                             </div>
-                            <ul class="links">
-                                <li><a href="#"><img src="icons/433-github.svg" alt="github" /></a></li>
-                                <li><a href="#"><img src="icons/458-linkedin.svg" alt="linkedin" /></a></li>
-                            </ul>
                         </div>
-                        <div class="contactForm">
-                            <h2>Send a Message</h2>
-                            <form class="formBox" action="https://formspree.io/mknqloej" method="POST">
-                                <div class="inputBox w50">
-                                    <input type="text" name="First Name" required>
-                                    <span>First Name</span>
-                                </div>
-                                <div class="inputBox w50">
-                                    <input type="text" name="Last Name" required>
-                                    <span>Last Name</span>
-                                </div>
-                                <div class="inputBox w50">
-                                    <input type="text" name="Email" required>
-                                    <span>Email Address</span>
-                                </div>
-                                <div class="inputBox w50">
-                                    <input type="text" name="Phone" required>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <div class="inputBox w100">
-                                    <textarea name="Message" required></textarea>
-                                    <span>Write your message here...</span>
-                                </div>
-                                <div class="inputBox w100">
-                                    <input type="submit" value="Send" />
-                                </div>
-                            </form>
+                        <div class="column right">
+                            <div class="contactform">
+                                <h2>Send a Message</h2>
+                                <form class="formbox" action="https://formspree.io/mknqloej" method="POST">
+                                    <!-- <div class="inputbox w50">
+                                        <input type="text" name="First Name" required>
+                                        <span>First Name</span>
+                                    </div>
+                                    <div class="inputbox w50">
+                                        <input type="text" name="Last Name" required>
+                                        <span>Last Name</span>
+                                    </div>
+                                    <div class="inputbox w50">
+                                        <input type="text" name="Email" required>
+                                        <span>Email Address</span>
+                                    </div>
+                                    <div class="inputbox w50">
+                                        <input type="text" name="Subject" required>
+                                        <span>Subject</span>
+                                    </div> -->
+                                    <div class="inputbox w100">
+                                        <input type="text" name="Name" required>
+                                        <span>Name</span>
+                                    </div>
+                                    <div class="inputbox w100">
+                                        <input type="text" name="Email" required>
+                                        <span>Email</span>
+                                    </div>
+                                    <div class="inputbox w100">
+                                        <textarea name="Message" required></textarea>
+                                        <span>Write your message here...</span>
+                                    </div>
+                                    <div class="inputbox w100">
+                                        <input class="send" type="submit" value="Send" />
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
             <div class="footer">
                 <div class="icomoon">
-                    Icons from Icomoon, Fonts from Google Fonts
+                    Icons from IcoMoon, Fonts from Google Fonts, Form Submission using Formspree
                 </div>
             </div>
         </div>

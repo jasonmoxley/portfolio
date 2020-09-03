@@ -189,6 +189,10 @@ header h2 {
     max-width: 1100px;
 }
 
+#contact {
+    max-width: 1100px;
+}
+
 .item .about .row .column {
     float: left;
     padding: 10px;
@@ -316,144 +320,108 @@ header h2 {
     margin-bottom: 100px;
 }
 
-section {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* min-height: 100vh;
-    background: #112d42; */
+.item .contact .row .column {
+    float: left;
+    height: 550px;
 }
 
-/* section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: #03a9f4;
-} */
-
-section .contact {
-    position: relative;
-    min-width: 1100px;
-    min-height: 550px;
-    display: flex;
-    z-index: 1000;
-}
- 
-section .contact .contactinfo {
-    position: absolute;
-    top: 40px;
-    width: 350px;
-    height: calc(100% - 80px);
+.item .contact .row .left {
+    width: 35%;
+    height: 550px;
     background: #116466;
-    z-index: 1;
+}
+
+.item .contact .row .left .contactinfo {
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
-section .contact .contactinfo h2 {
+.item .contact .row .left .contactinfo h2 {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-section .contact .contactinfo .info {
-    position: relative;
+.item .contact .row .left .contactinfo .info {
     margin: 20px 0;
     padding: 0;
 }
 
-section .contact .contactinfo .info li {
-    position: relative;
+.item .contact .row .left .contactinfo li {
     list-style: none;
-    display: flex;
+    display: inline-block;
     margin: 20px 0;
-    cursor: pointer;
-    align-items: flex-start;
+    
 }
 
-section .contact .contactinfo .info li span:nth-child(1) {
+.item .contact .row .left .contactinfo li .logo {
     width: 30px;
     min-width: 30px;
 }
 
-section .contact .contactinfo .info li span:nth-child(1) img {
+.item .contact .row .left .contactinfo li .logo img {
     max-width: 100%;
     filter: invert(1);
-    opacity: 0.5;
 }
 
-section .contact .contactinfo .info li span:nth-child(2) {
+.item .contact .row .left .contactinfo li .details {
     color: #fff;
     margin-left: 10px;
     font-weight: 400;
     font-size: 1rem;
-    opacity: 0.5;
 }
 
-section .contact .contactinfo .info li:hover span:nth-child(1) img,
-section .contact .contactinfo .info li:hover span:nth-child(2) {
-    opacity: 1;
-}
-
-
-
-section .contact .contactinfo .links {
-    margin: 0;
+.item .contact .row .left .contactinfo .links {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    /* margin-top: 110px; */
     padding: 0;
-    position: relative;
     display: inline-block;
     text-align: center;
 }
 
-section .contact .contactinfo .links li {
+.item .contact .row .left .contactinfo .links li {
     list-style: none;
     display: inline;
     margin-right: 20px;
 }
 
-section .contact .contactinfo .links li a {
+.item .contact .row .left .contactinfo .links li a {
     text-decoration: none;
 }
 
-section .contact .contactinfo .links li a img {
+.item .contact .row .left .contactinfo .links li a img {
     width: 40px;
     height: 40px;
     filter: invert(1);
     opacity: 0.5;
 }
 
-section .contact .contactinfo .links li:hover a img {
+.item .contact .row .left .contactinfo .links li:hover a img {
     opacity: 1;
 }
 
-section .contact .contactForm {
-    position: absolute;
-    padding: 70px 50px;
+.item .contact .row .right {
+    width: 65%;
+    height: 550px;
     background: #c5c6c7;
-    margin-left: 150px;
-    padding-left: 250px;
-    width: calc(100% - 150px);
-    height: 100%;
-    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
 }
 
-section .contact .contactForm h2 {
-    color: #0f3959;
+.item .contact .row .right .contactform {
+    padding: 40px;
+    height: 550px;
+}
+
+.item .contact .row .right .contactform h2 {
+    color: black;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-section .contact .contactForm .formBox {
+.item .contact .row .right .contactform .formbox {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -461,32 +429,21 @@ section .contact .contactForm .formBox {
     padding-top: 30px;
 }
 
-section .contact .contactForm .formBox .inputBox {
+.item .contact .row .right .contactform .formbox .inputbox {
     position: relative;
     margin: 0 0 35px 0;
 }
 
-section .contact .contactForm .formBox .inputBox.w50 {
+.item .contact .row .right .contactform .formbox .w50 {
     width: 47%;
 }
 
-section .contact .contactForm .formBox .inputBox.w100 {
+.item .contact .row .right .contactform .formbox .w100 {
     width: 100%;
 }
 
-section .contact .contactForm .formBox .inputBox input {
-    width: 100%;
-    padding: 5px 0;
-    resize: none;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #c5c6c7;
-    border: none;
-    outline: none;
-}
-
-section .contact .contactForm .formBox .inputBox input,
-section .contact .contactForm .formBox .inputBox textarea {
+.item .contact .row .right .contactform .formbox .inputbox input,
+.item .contact .row .right .contactform .formbox .inputbox textarea {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     resize: none;
@@ -499,11 +456,15 @@ section .contact .contactForm .formBox .inputBox textarea {
     background: #c5c6c7;
 }
 
-section .contact .contactForm .formBox .inputBox textarea {
+.item .contact .row .right .contactform .formbox .inputbox input {
+    padding: 5px 0;
+}
+
+.item .contact .row .right .contactform .formbox .inputbox textarea {
     min-height: 120px;
 }
 
-section .contact .contactForm .formBox .inputBox span {
+.item .contact .row .right .contactform .formbox .inputbox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -514,11 +475,10 @@ section .contact .contactForm .formBox .inputBox span {
     pointer-events: none;
 }
 
-
-section .contact .contactForm .formBox .inputBox input:focus ~ span,
-section .contact .contactForm .formBox .inputBox textarea:focus ~ span,
-section .contact .contactForm .formBox .inputBox input:valid ~ span,
-section .contact .contactForm .formBox .inputBox textarea:valid ~ span {
+.item .contact .row .right .contactform .formbox .inputbox input:focus ~ span,
+.item .contact .row .right .contactform .formbox .inputbox textarea:focus ~ span,
+.item .contact .row .right .contactform .formbox .inputbox input:valid ~ span,
+.item .contact .row .right.contactform .formbox .inputbox textarea:valid ~ span {
     transform: translateY(-20px);
     font-size: 0.75rem;
     font-weight: 300;
@@ -526,7 +486,8 @@ section .contact .contactForm .formBox .inputBox textarea:valid ~ span {
     color: #f27d42;
 }
 
-section .contact .contactForm .formBox .inputBox input[type="submit"] {
+
+.item .contact .row .right .contactform .formbox .w100 .send {
     position: relative;
     cursor: pointer;
     background: #116466;
@@ -536,8 +497,14 @@ section .contact .contactForm .formBox .inputBox input[type="submit"] {
     padding: 12px;
 }
 
-section .contact .contactForm .formBox .inputBox input[type="submit"]:hover {
+.item .contact .row .right .contactform .formbox .w100 .send:hover {
     background: #f27d42;
+}
+
+.item .contact .row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .footer {
