@@ -478,7 +478,7 @@ header h2 {
 .item .contact .row .right .contactform .formbox .inputbox input:focus ~ span,
 .item .contact .row .right .contactform .formbox .inputbox textarea:focus ~ span,
 .item .contact .row .right .contactform .formbox .inputbox input:valid ~ span,
-.item .contact .row .right.contactform .formbox .inputbox textarea:valid ~ span {
+.item .contact .row .right .contactform .formbox .inputbox textarea:valid ~ span {
     transform: translateY(-20px);
     font-size: 0.75rem;
     font-weight: 300;
